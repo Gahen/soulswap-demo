@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
-import {IPairInfo} from '../../../shared/interfaces';
+import { IPairInfo } from '../../../shared/interfaces';
 
 const tokens = ['seance', 'soul'];
 const pairTokens = ['lux', 'ftm', 'eth', 'btc', 'usdc', 'unidx'];
@@ -28,7 +28,7 @@ function getPairs(name: string) {
   return finalTokens.map(token => makePair(name, token)); // Array<string> => Array<[string, string])>
 }
 
-function makePair(tokenA: string, tokenB: string): PairInfo {
+function makePair(tokenA: string, tokenB: string): IPairInfo {
   return {
     pair: [tokenA, tokenB],
     apr: Math.random() * 2000,
