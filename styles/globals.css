@@ -8,6 +8,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: rgb(13, 4, 21);
+  color: #bfbfbf;
 }
 
 a {
@@ -17,4 +19,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.bg-purple {
+    width: 400px;
+    --tw-bg-opacity: 1;
+    background-color: rgba(167,85,221,var(--tw-bg-opacity));
 }
